@@ -1,0 +1,9 @@
+.DS_Store
+*/**/.DS_Store
+*/**/node_modules/
+node_modules/
+dest/
+sample-files/
+*/**/npm-debug.log
+*/**/bower_components/
+angular.sublime-workspace
