@@ -6,4 +6,5 @@ dest/
 sample-files/
 */**/npm-debug.log
 */**/bower_components/
-angular.sublime-workspace
+github-viewer.sublime-project
+github-viewer.sublime-workspace
