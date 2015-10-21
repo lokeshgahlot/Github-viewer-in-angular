@@ -1,0 +1,21 @@
+section
+  div
+    h2 {{user.name}}
+    div {{error}}
+    img(ng-src='http://www.gravatar.com/avatar/{{user.gravatar_id}}' title='{{user.name}}')
+    select(ng-modal='repoSortOrder')
+      option(value='+name') Name
+      option(value='-stargazers_count') Stars
+      option(value='+language') Language
+
+  table
+    thead
+      tr
+        th Name
+        th Stars
+        th Language
+    tbody
+      tr(ng-repeat='repo in repos | orderBy:repoSortOrder')
+        td {{repo.name}}
+        td {{repo.stargazers_count | number}}
+        td {{repo.language}}
